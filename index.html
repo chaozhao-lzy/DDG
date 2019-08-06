@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+        <head>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+           ga('create', 'UA-59952504-1', 'auto');
+           ga('send', 'pageview');
+        </script>
+		<title>Deep Dexterous Grasping</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+<!--
+			<header id="header" class="alt">
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="" class="icon fa-angle-down">Layouts</a>
+							<ul>
+								<li><a href=".html">Generic</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="elements.html">Elements</a></li>
+								<li>
+									<a href="">Submenu</a>
+									<ul>
+										<li><a href="#">Option One</a></li>
+										<li><a href="#">Option Two</a></li>
+										<li><a href="#">Option Three</a></li>
+										<li><a href="#">Option Four</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#" class="button">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
+            -->
+            <!-- Banner -->
+			<section id="banner">
+				<h2>Deep Dexterous Grasping</h2>
+				<p>Grasping objects is difficult. Dexterous grasping using a single-view depth camera is harder. On this page, you'll find all you need about our new paper "Deep Dexterous Grasping", accompanying grasping simulator, 2M simulated grasp dataset, re-running grasps in simulation and collecting new data.</p>
+                <!--
+                <ul class="actions">
+					<li><a href="#" class="button special">Sign Up</a></li>
+					<li><a href="#" class="button">Learn More</a></li>
+            </ul>
+            -->
+			</section>
+
+		<!-- Main -->
+			<section id="main" class="container">
+
+				<section class="box special">
+					<span class="image featured"><img src="images/boris1.jpg" alt="" /></span>
+					<header class="major">
+					<h2>The paper uses deep neural networks to improve the state-of-the-art in dexterous grasping of previously unseen objects using a single view camera. </h2>
+                <p></p>
+					</header>
+				</section>
+
+				<section class="box special features">
+					<div class="features-row">
+						<section>
+							<span class="icon major fa-file-pdf-o accent1"></span>
+							<h3>Paper</h3>
+                            <p>You can access the manuscript via this <a href="https://google.com">link</a>. To the best of our knowledge, this is the first learned generative-evaluative architecture for dexterous grasping. The generative model is a contact-based method that learns from demonstration. The evaluative model is a deep neural network (Resnet-50 or VGG-16 based) that ranks the generated grasps.</p>
+						</section>
+						<section>
+							<span class="icon major fa-code-fork accent2"></span>
+							<h3>Code</h3>
+                            <p>DDG is based on a carefully tuned dexterous grasp <a href="https://github.com/rusen/Grasp">simulator</a>, currently supporting the DLR-II hand. It is built on the <a href="http://www.mujoco.org">MuJoCo</a> physics engine. You can re-run simulated grasps and record videos using this tool. Click <a href="https://github.com/rusen/Grasp/blob/master/README">here</a> to learn how to install the codebase and use it to re-run grasps. 
+                            The ability to generate novel grasps on new scenes is coming soon.</p>
+						</section>
+					</div>
+					<div class="features-row">
+						<section>
+							<span class="icon major fa-database accent3"></span>
+							<h3>Dataset</h3>
+                            <p>The data-hungry evaluative models are trained on simulated grasps. We released the two datasets that we used to train evaluative models, containing over 2M grasps. Click <a href="https://drive.google.com/file/d/1HYZqaEjZ5jBmEBFIAtxFrR7tD7ySay4p/view?usp=sharing">here</a> to download the GM1 dataset (1M), and <a href="https://drive.google.com/file/d/1dbTEmkc_avNpgLD77CLDSnWnCD1sQgKY/view?usp=sharing">here</a> to download GM2 dataset (1M). Refer to the Readme files for on how to use the datasets.</p>
+						</section>
+						<section>
+							<span class="icon major fa-thumbs-o-up accent4"></span>
+							<h3>Generative Model</h3>
+                            <p>DDG uses a state-of-the-art grasp generator to sample plausible grasps, given the point cloud of an object. Both generators used in this paper are from <a href="https://github.com/RobotsLab/Golem">Golem Robot Control Framework</a>.</p>
+						</section>
+					</div>
+					<div class="features-row">
+						<section>
+							<span class="icon major fa-cubes accent5"></span>
+							<h3>PacMan Project</h3>
+                            <p>This work was supported by the PacMan project, where we built a dishwasher-loading humanoid robot. Click <a href="www.pacman-project.eu">here</a> for details.</p>
+						</section>
+						<section>
+							<span class="icon major fa-envelope accent6"></span>
+							<h3>Contact</h3>
+                            <p>Have any questions, comments? Please don't hesitate to contact us via <a href="mailto:rusenaktas@gmail.com">e-mail</a>.</p>
+						</section>
+					</div>
+
+				</section>
+                <!--
+				<div class="row">
+					<div class="6u 12u(narrower)">
+
+						<section class="box special">
+							<span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
+							<h3>Sed lorem adipiscing</h3>
+							<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							<ul class="actions">
+								<li><a href="#" class="button alt">Learn More</a></li>
+							</ul>
+						</section>
+
+					</div>
+					<div class="6u 12u(narrower)">
+
+						<section class="box special">
+							<span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
+							<h3>Accumsan integer</h3>
+							<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							<ul class="actions">
+								<li><a href="#" class="button alt">Learn More</a></li>
+							</ul>
+						</section>
+
+					</div>
+				</div>
+
+			</section>
+            -->
+            <!-- CTA -->
+            <!--
+			<section id="cta">
+
+				<h2>Sign up for beta access</h2>
+				<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
+
+				<form>
+					<div class="row uniform 50%">
+						<div class="8u 12u(mobilep)">
+							<input type="email" name="email" id="email" placeholder="Email Address" />
+						</div>
+						<div class="4u 12u(mobilep)">
+							<input type="submit" value="Sign Up" class="fit" />
+						</div>
+					</div>
+				</form>
+
+			</section>
+            -->
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://twitter.com/rusen_aktas" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://gitlab.com/rusen/DDG" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="mailto:rusenaktas@gmail.com" class="icon fa-at"><span class="label">e-mail</span></a></li>
+            </ul>
+				<ul class="copyright">
+					<li>&copy; Umit Rusen Aktas, 2019. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+	</body>
+</html>
